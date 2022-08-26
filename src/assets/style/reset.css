@@ -1,4 +1,8 @@
 /* 请尽量不要直接更改此reset文件 */
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,

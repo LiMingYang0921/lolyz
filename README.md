@@ -1,4 +1,4 @@
-# lolyz
+# 英雄联盟宇宙
 
 ## Project setup
 ```

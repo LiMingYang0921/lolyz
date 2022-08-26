@@ -11,11 +11,7 @@
       <img src="@/assets/images/yz.webp" alt="" />
       <div class="line"></div>
       <ul>
-        <li
-          v-for="(tab, index) in tabList"
-          :class="{ choose: currentRoute === tab.router }"
-          :key="index"
-        >
+        <li v-for="(tab, index) in tabList" :class="{ choose: currentRoute === tab.router }" :key="index">
           <div>{{ tab.name }}</div>
           <div class="enName">{{ tab.enName }}</div>
         </li>
@@ -92,31 +88,40 @@ export default defineComponent({
   background: rgb(18, 18, 18);
   height: 64px;
   border-bottom: 2px solid #262626;
+
   .left {
     display: flex;
     align-items: center;
+
     .name {
       display: flex;
       flex-direction: column;
+
       a {
         color: #a29490;
         cursor: pointer;
       }
+
       a:hover {
         color: #fff;
       }
     }
   }
+
   .tab {
     display: flex;
     align-items: center;
+    white-space: nowrap;
+
     .line {
       width: 2px;
       height: 30px;
       background: #262626;
     }
+
     ul {
       display: flex;
+
       li {
         color: #c9aa71;
         padding: 15px 0 10px 0;
@@ -125,15 +130,18 @@ export default defineComponent({
         font-family: 'Microsoft YaHei';
         font-size: 14px;
         cursor: pointer;
+
         .enName {
           font-size: 12px;
           margin-top: 1px;
         }
       }
+
       .choose {
         color: #fff;
         border-bottom: 1px solid #c79a3c;
       }
+
       li:hover {
         color: #fff;
         border-bottom: 1px solid #c79a3c;
